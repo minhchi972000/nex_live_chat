@@ -86,7 +86,7 @@ class _NexInputState extends State<NexInput> {
                             ? null
                             : hasChangeTextFiled
                             ? AppColors.primary
-                            : AppColors.colorB5B9C3,
+                            : AppColors.colorGreyB4BBC9,
                       )
                     : Image.asset(widget.pngIconLeft!.assetIconsPath),
               ),
@@ -94,20 +94,20 @@ class _NexInputState extends State<NexInput> {
                 height: 21,
                 width: 1,
                 margin: const EdgeInsets.symmetric(horizontal: 8),
-                color: hasChangeTextFiled ? AppColors.primary : AppColors.colorB5B9C3,
+                color: hasChangeTextFiled ? AppColors.primary : AppColors.colorGreyB4BBC9,
               ),
               Expanded(
                 child: TextFormField(
                   cursorWidth: 1,
                   controller: widget.textEditingController,
-                  style: textTheme.bodyMedium!.size(14).textColor(widget.enabled ? AppColors.black : AppColors.colorB5B9C3),
+                  style: textTheme.bodyMedium!.size(14).textColor(widget.enabled ? AppColors.black : AppColors.colorGreyB4BBC9),
                   obscureText: _isShowPassword,
                   inputFormatters: widget.inputFormatters,
                   keyboardType: widget.keyboardType ?? TextInputType.text,
                   enabled: widget.enabled,
                   decoration: InputDecoration(
                     contentPadding: EdgeInsets.zero,
-                    hintStyle: textTheme.bodyMedium!.size(14).textColor(AppColors.colorB5B9C3),
+                    hintStyle: textTheme.bodyMedium!.size(14).textColor(AppColors.colorGreyB4BBC9),
                     hintText: widget.hintText ?? 'representative_guest_name'.tr(),
                     border: InputBorder.none,
                     errorBorder: InputBorder.none,
@@ -129,7 +129,7 @@ class _NexInputState extends State<NexInput> {
                   child: Icon(
                     _isShowPassword ? Icons.visibility : Icons.visibility_off_outlined,
                     size: 24.0,
-                    color: _isShowPassword ? AppColors.colorB5B9C3 : AppColors.primary,
+                    color: _isShowPassword ? AppColors.colorGreyB4BBC9 : AppColors.primary,
                   ),
                 ),
             ],
@@ -137,7 +137,7 @@ class _NexInputState extends State<NexInput> {
             radius: 7,
             color: Colors.white,
             padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-            boxBorder: Border.all(width: 1, color: AppColors.colorEDF0F5),
+            boxBorder: Border.all(width: 1, color: AppColors.colorGreyB4BBC9),
           ),
     );
   }
@@ -159,15 +159,15 @@ class NexInputSearch extends StatelessWidget {
             height: 50,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(27),
-              border: Border.all(width: 1, color: AppColors.colorF3F5F9),
+              border: Border.all(width: 1, color: AppColors.colorGreyB4BBC9),
               boxShadow: [BoxShadow(spreadRadius: 1, blurRadius: 8, offset: const Offset(0, 5), color: Colors.grey.shade50)],
               color: Colors.white,
             ),
             child: TextFormField(
               controller: textEditingController,
               decoration: InputDecoration(
-                hintStyle: textTheme.bodyMedium!.size(14).textColor(AppColors.colorA4AFBE),
-                suffix: const SvgPictureImageCustom(svgPath: 'ic_search_nex', color: AppColors.colorAFB9C6).paddingOnly(right: 12),
+                hintStyle: textTheme.bodyMedium!.size(14).textColor(AppColors.colorGreyB4BBC9),
+                suffix: const SvgPictureImageCustom(svgPath: 'ic_search_nex', color: AppColors.colorGreyB4BBC9).paddingOnly(right: 12),
                 hintText: hintText ?? 'searching_Locations'.tr(),
                 border: InputBorder.none,
                 enabledBorder: InputBorder.none,
@@ -179,16 +179,16 @@ class NexInputSearch extends StatelessWidget {
         : TextFormField(
             controller: textEditingController,
             decoration: InputDecoration(
-              hintStyle: textTheme.bodyMedium!.size(14).textColor(AppColors.colorA4AFBE),
-              suffix: const SvgPictureImageCustom(svgPath: 'ic_search_nex', color: AppColors.colorAFB9C6).paddingOnly(right: 12),
+              hintStyle: textTheme.bodyMedium!.size(14).textColor(AppColors.colorGreyB4BBC9),
+              suffix: const SvgPictureImageCustom(svgPath: 'ic_search_nex', color: AppColors.colorGreyB4BBC9).paddingOnly(right: 12),
               hintText: hintText ?? 'searching_Locations'.tr(),
               enabledBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(30),
-                borderSide: const BorderSide(width: 1, color: AppColors.colorF3F5F9),
+                borderSide: const BorderSide(width: 1, color: AppColors.colorGreyB4BBC9),
               ),
               focusedBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(30),
-                borderSide: const BorderSide(width: 1, color: AppColors.colorF3F5F9),
+                borderSide: const BorderSide(width: 1, color: AppColors.colorGreyB4BBC9),
               ),
             ),
             onSaved: (_) => onSubmit,

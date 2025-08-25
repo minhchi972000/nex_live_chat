@@ -28,12 +28,6 @@ extension TextStyleExtension on TextStyle {
 
   TextStyle textColor(Color v) => copyWith(color: v);
 
-  TextStyle get text2B283C => textColor(AppColors.color2B283C);
-
-  TextStyle get text212121 => textColor(AppColors.color212121);
-
-  TextStyle get text28A745 => textColor(AppColors.color28A745);
-
   TextStyle weight(FontWeight v) => copyWith(fontWeight: v);
 
   TextStyle fontStyleT(FontStyle v) => copyWith(fontStyle: v);
@@ -53,11 +47,6 @@ extension TextStyleExtension on TextStyle {
   TextStyle get textPrimary => copyWith(color: AppColors.primary);
 
   TextStyle get text9196A1 => copyWith(color: Colors.grey);
-
-  TextStyle get text2B273C => copyWith(color: AppColors.color2B273C);
-  TextStyle get text767C89 => copyWith(color: AppColors.color767C89);
-  TextStyle get text858B99 => copyWith(color: AppColors.color858B99);
-  TextStyle get text5F1F76 => copyWith(color: AppColors.color5F1F76);
 
   TextStyle get lineThrough => copyWith(decoration: TextDecoration.combine([TextDecoration.lineThrough]));
 }

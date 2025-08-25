@@ -18,18 +18,16 @@ class LoginScreen extends StatelessWidget {
     return NexScaffold(
       showAppBar: true,
       elevation: 1,
+      title: "Đăng nhập",
       child: Form(
         key: cubit.formKey,
         child: ListView(
           children: [
+            80.verticalSpace,
+
+            const SvgPictureImageCustom(svgPath: 'logo_nexdashboard', width: 130),
+
             50.verticalSpace,
-
-            Align(alignment: Alignment.topLeft, child: Image.asset('logo_nex'.assetImagesPathPNG, width: 64, height: 69)),
-
-            20.verticalSpace,
-            Text("Chào mừng trở lại", style: textTheme.titleLarge?.size(22)).paddingOnly(right: 120),
-
-            30.verticalSpace,
             Text('Email', style: textTheme.bodyMedium),
             15.verticalSpace,
             NexInput(

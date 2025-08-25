@@ -5,7 +5,7 @@ import 'app_colors.dart';
 
 class AppThemeData {
   static final InputBorder _inputBorder = OutlineInputBorder(
-    borderSide: const BorderSide(color: AppColors.colorE0E1E2),
+    borderSide: const BorderSide(color: AppColors.colorGreyB4BBC9),
     borderRadius: BorderRadius.circular(8),
   );
   static final themeData = ThemeData(
@@ -14,7 +14,7 @@ class AppThemeData {
     datePickerTheme: const DatePickerThemeData(surfaceTintColor: Colors.white),
     fontFamily: 'svn_display',
     splashColor: Colors.transparent,
-    primaryColor: AppColors.color812D9E,
+    primaryColor: AppColors.white,
     highlightColor: Colors.transparent,
     appBarTheme: AppBarTheme(
       iconTheme: const IconThemeData(color: AppColors.black),
@@ -51,7 +51,7 @@ class AppThemeData {
       helperMaxLines: 2,
       // labelStyle: _textTheme.bodyMedium!.regular.textGrey858F9B,
       // floatingLabelStyle: _textTheme.bodyMedium!.regular.textViolet6A06F6,
-      hintStyle: _textTheme.bodySmall!.medium.textColor(AppColors.color888E9E),
+      hintStyle: _textTheme.bodySmall!.medium.textColor(AppColors.colorGreyB4BBC9),
       // focusedBorder: _focusedBorder,
       border: _inputBorder,
       enabledBorder: _inputBorder,
