@@ -2,7 +2,7 @@ name: nex_live_chat
 description: "A new Flutter project."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
@@ -33,57 +33,169 @@ dependencies:
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
-  cupertino_icons: ^1.0.8
+  #  cupertino_icons: ^1.0.6
+  extended_image: ^10.0.1
+  intl: 0.19.0
+  dio: ^5.8.0+1
+  flutter_svg: ^2.1.0
+  #  webview_flutter: any
+  #  google_sign_in: 6.2.1
+  #  flutter_spinkit: ^5.2.1
+  #  shared_preferences: any
+  #  url_launcher: any
+  flutter_bloc: any
+  shimmer: any
+  syncfusion_flutter_sliders: ^29.1.38
+  syncfusion_flutter_core: ^29.1.38
+  #  syncfusion_flutter_datepicker: any
+  pull_to_refresh: ^2.0.0
+  #  equatable: 2.0.5
+  #  flutter_easyloading: any
+  # cached_network_image: ^3.3.1
+  flutter_staggered_grid_view: ^0.7.0
+  pin_code_fields: ^8.0.1
+  # device_preview: ^1.2.0
+  carousel_slider: ^5.0.0
+  get_storage: ^2.1.1
+  get_it: ^8.0.3
+  easy_localization: ^3.0.7+1
+  easy_localization_loader: 2.0.2
+  equatable: ^2.0.5
+  html: ^0.15.2
+  google_sign_in: ^6.3.0
+  flutter_svprogresshud: ^1.0.1
+  sign_in_with_apple: ^7.0.1
+  geolocator: ^14.0.0
+  url_launcher: ^6.3.0
+  permission_handler: ^12.0.0+1
+  flutter_image_compress: ^2.1.1
+  #  video_compress: ^3.1.2
+  #  video_thumbnail: ^0.5.3
+  path_provider: ^2.1.3
+  webview_flutter: ^4.7.0
+  qr_flutter: ^4.1.0
+  # firebase_core: ^4.0.0
+  shorebird_code_push: ^2.0.3
+  app_links: ^6.3.2
+  flutter_stripe: ^11.5.0
+
+  sentry_flutter: ^8.4.0
+
+  sentry_dio: ^8.4.0
+  stripe_platform_interface: ^11.5.0
+  package_info_plus: ^8.0.0
+  crypto: ^3.0.2
+  app_tracking_transparency: any
+  #  flutter_paypal_native: ^2.1.0
+
+  zego_zim: ^2.17.0
+  # firebase_auth: ^6.0.1
+  # firebase_messaging: ^16.0.0
+  # flutter_local_notifications: ^19.1.0
+  # firebase_remote_config: ^6.0.0
+  device_info_plus: ^11.3.0
+
+  zego_zpns: ^2.6.0+3
+
+  flutter_widget_from_html_core: ^0.16.0
+  table_calendar: ^3.1.2
+  connectivity_plus: ^6.0.4
+  go_router: ^16.0.0
+  geocoding: ^3.0.0
+  visibility_detector: ^0.4.0+2
+  image_picker: ^1.1.2
+
+  # screenshot: ^3.0.0
+  google_maps_flutter: ^2.5.0
+  flutter_typeahead: ^5.2.0
+  pusher_channels_flutter: any
+  contentsize_tabbarview: ^0.0.2
+
+  video_player: ^2.10.0
+  video_thumbnail: ^0.5.6
+  flutter_image_gallery_saver: ^0.0.2
+  flame: ^1.30.0
+  flame_audio: ^2.11.7
+  confetti: ^0.8.0
+  google_fonts: ^6.2.1
+  flame_bloc: ^1.12.15
+  flame_network_assets: ^0.3.3+14
+#
+#flutter_native_splash:
+#    android: true
+#    ios: true
+#    color: "#FFFFFF"
+#    image: 'assets/images/logo.png'
+
+dependency_overrides:
+  http: any
+  csv: any
+  intl: 0.19.0
+  photo_manager: ^3.2.0
+  url_launcher_ios: ^6.3.1
 
 dev_dependencies:
+  easy_localization_generator: ^0.3.3
   flutter_test:
     sdk: flutter
 
-  # The "flutter_lints" package below contains a set of recommended lints to
-  # encourage good coding practices. The lint set provided by the package is
-  # activated in the `analysis_options.yaml` file located at the root of your
-  # package. See that file for information about deactivating specific lint
-  # rules and activating additional ones.
-  flutter_lints: ^5.0.0
+  # flavorizr:
+  #   app:
+  #     android:
+  #       flavorDimensions: "flavor-type"
 
-# For information on the generic Dart part of this file, see the
-# following page: https://dart.dev/tools/pub/pubspec
+  #   flavors:
+  #     stg:
+  #       app:
+  #         name: "NEX STG"
+  #       android:
+  #         applicationId: "com.nexnowstg"
+  #         firebase:
+  #           config: "firebase/stg/google-services.json"
+  #       ios:
+  #         bundleId: "com.nexnowstg"
+  #         firebase:
+  #           config: "firebase/stg/GoogleService-Info.plist"
 
+  #     prod:
+  #       app:
+  #         name: "NEX"
+  #       android:
+  #         applicationId: "com.lotviet.nexnow"
+  #         firebase:
+  #           config: "firebase/prod/google-services.json"
+  #       ios:
+  #         bundleId: "com.nexnow"
+  #         firebase:
+  #           config: "firebase/prod/GoogleService-Info.plist"
+
+  flutter_lints: 3.0.1
+
+#  flutter_flavorizr: ^2.2.3
 # The following section is specific to Flutter packages.
 flutter:
-
-  # The following line ensures that the Material Icons font is
-  # included with your application, so that you can use the icons in
-  # the material Icons class.
   uses-material-design: true
 
-  # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+  assets:
+    - assets/icon/
+    - assets/images/
+    - assets/lottie/
 
-  # An image asset can refer to one or more resolution-specific "variants", see
-  # https://flutter.dev/to/resolution-aware-images
+  fonts:
+    - family: svn_display
+      fonts:
+        - asset: assets/fonts/SVN-HelveticaNowDisplayRegular.ttf
+          weight: 400
+        - asset: assets/fonts/SVN-HelveticaNowDisplayMedium.ttf
+          weight: 500
+        - asset: assets/fonts/SVN-HelveticaNowDisplayBold.ttf
+          weight: 700
 
-  # For details regarding adding assets from package dependencies, see
-  # https://flutter.dev/to/asset-from-package
-
-  # To add custom fonts to your application, add a fonts section here,
-  # in this "flutter" section. Each entry in this list should have a
-  # "family" key with the font family name, and a "fonts" key with a
-  # list giving the asset and other descriptors for the font. For
-  # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
-  #   - family: Trajan Pro
-  #     fonts:
-  #       - asset: fonts/TrajanPro.ttf
-  #       - asset: fonts/TrajanPro_Bold.ttf
-  #         weight: 700
-  #
-  # For details regarding fonts from package dependencies,
-  # see https://flutter.dev/to/font-from-package
+    - family: svn_text
+      fonts:
+        - asset: assets/fonts/SVN-HelveticaNowTextRegular.ttf
+          weight: 400
+        - asset: assets/fonts/SVN-HelveticaNowTextMedium.ttf
+          weight: 500
+        - asset: assets/fonts/SVN-HelveticaNowTextBold.ttf
+          weight: 700
